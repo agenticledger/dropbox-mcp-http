@@ -6,7 +6,7 @@
   "description": "Personal Dropbox files, transfers, revisions and sharing through direct API v2.",
   "category": "Productivity",
   "transport": "http",
-  "url": "https://dropboxmcp.agenticledger.ai/mcp",
+  "url": "https://dropbox-mcp-http-production.up.railway.app/mcp",
   "repository": "https://github.com/agenticledger/dropbox-mcp-http",
   "brokerProvider": "dropbox",
   "brokerKind": "oauth",
@@ -153,5 +153,12 @@
   },
   "writeEnableEnv": "DROPBOX_ENABLE_WRITES=true",
   "publishingStatus": "Portable AgentHub mirror/packaging; not a remote AgentHub publication receipt",
-  "qualification": "mocked contracts only; real Dropbox consent, refresh and operations pending"
+  "qualification": "mocked contracts only; real Dropbox consent, refresh and operations pending",
+  "proposedCustomDomain": "https://dropboxmcp.agenticledger.ai/mcp",
+  "customDomainStatus": "Railway domain registered; owner DNS/TLS verification pending",
+  "registryContribution": {
+    "registryId": "dropbox",
+    "status": "pending",
+    "submittedAt": "2026-10-29"
+  }
 }

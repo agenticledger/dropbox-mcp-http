@@ -63,4 +63,8 @@ Future real test: operator confirms app-console settings and scopes; a human con
 
 ## Release destinations
 
+Verified public MCP endpoint: **https://dropbox-mcp-http-production.up.railway.app/mcp**. Railway service `dropbox-mcp-http` in `finney-mcps-built-in`. Initial deployment `2c4cf419-7b9a-4ae5-842c-c8e444161bed` succeeded. Health 200, MCP initialize, tools/list (33), and principal-only unbound connection_required with consent link all passed. Writes and mock mode are false in production. Docs, tool schemas and download ZIP returned HTTP 200.
+
+Finney Registry contribution `dropbox` was submitted and is **pending admin review**. Portable AgentHub mirror is included; no remote AgentHub publication receipt is claimed. Ask `@connections-broker` to narrow unused file_requests scopes and confirm app settings, and `@mcp-steward` to perform the first scratch-only OAuth/read proof. Platform registration remains the separate @hub handoff; gateway code was not edited.
+
 GitHub: <https://github.com/agenticledger/dropbox-mcp-http>. Docs: <https://financemcps.agenticledger.ai/dropbox/>. Proposed custom domain: `dropboxmcp.agenticledger.ai`; use the verified Railway fallback until DNS and TLS are proven. `/health` reports configuration, mock mode, writes and tool count; it is not proof of a real Dropbox grant. No OAuth authorization-server advertisement or credential UI is hosted here.
