@@ -20,3 +20,17 @@ MCPLive docs/ZIP and portable AgentHub mirror; deploy only after broker prerequi
 - [ ] Real Dropbox qualification BLOCKED on human consent and app-console confirmation: app credential variables present and offline consent URL proven; actual user grant, refresh and provider operations not tested. Broker owner must narrow two unused file_requests scopes.
 
 Writes default off. User-account tokens only; team impersonation not implemented or claimed.
+
+## Scoped production write enablement — 2026-10-29 16:31 UTC
+
+Owner authorized enabling the canonical production DROPBOX_ENABLE_WRITES flag for MCP Steward's controlled scratch-folder lifecycle. No Dropbox data operations belong to this release.
+
+- [x] Worktree inspected clean; authoritative repo and production service/namespace confirmed
+- [x] Guard located: server.ts and http.ts enable only when DROPBOX_ENABLE_WRITES === "true"; tools.ts still requires literal confirm:true
+- [x] Focused mocked contracts added for default/false/nonliteral values, enabled create/upload/move/rename/share/delete routing, confirmation/path rejection, and unauthenticated HTTP failure
+- [x] Format/lint, 3 focused tests and 33 full tests, typecheck/build passed; production audit zero vulnerabilities
+- [x] Set only DROPBOX_ENABLE_WRITES=true; all other service variables verified unchanged; code and local defaults remain false
+- Release path: relevant tests/operational docs committed and pushed through existing GitHub→Railway automation; final SHA/status recorded in the durable write-enable release evidence.
+- Final deployment gate: SUCCESS, expected configured-write health, 33 tools and unauthenticated initialize rejection must be verified in the durable release evidence before reporting completion.
+
+MCPLive/catalog/tool schemas are unchanged for this configuration-only update. Canonical stdio receives the regression tests; its default write guard remains off.

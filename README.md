@@ -68,3 +68,7 @@ Verified public MCP endpoint: **https://dropbox-mcp-http-production.up.railway.a
 Finney Registry contribution `dropbox` was submitted and is **pending admin review**. Portable AgentHub mirror is included; no remote AgentHub publication receipt is claimed. Ask `@connections-broker` to narrow unused file_requests scopes and confirm app settings, and `@mcp-steward` to perform the first scratch-only OAuth/read proof. Platform registration remains the separate @hub handoff; gateway code was not edited.
 
 GitHub: <https://github.com/agenticledger/dropbox-mcp-http>. Docs: <https://financemcps.agenticledger.ai/dropbox/>. Proposed custom domain: `dropboxmcp.agenticledger.ai`; use the verified Railway fallback until DNS and TLS are proven. `/health` reports configuration, mock mode, writes and tool count; it is not proof of a real Dropbox grant. No OAuth authorization-server advertisement or credential UI is hosted here.
+
+## Authorized production write configuration — 2026-10-29
+
+The desktop owner authorized setting `DROPBOX_ENABLE_WRITES=true` on the canonical hosted `dropbox-mcp-http` service for MCP Steward's controlled scratch-folder lifecycle. Code and local defaults remain off. Every mutation still requires literal `confirm:true`, schema/path validation, per-agent broker resolution, and no automatic write retries. This is a production environment setting, not a bypass of the safety guard. This release performs no real Dropbox file operations.
