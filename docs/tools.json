@@ -119,9 +119,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "cursor"
-      ],
+      "required": ["cursor"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -158,9 +156,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -214,9 +210,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "query"
-      ],
+      "required": ["query"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -250,9 +244,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "cursor"
-      ],
+      "required": ["cursor"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -289,9 +281,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -329,9 +319,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -364,9 +352,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -399,9 +385,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -425,10 +409,7 @@
         },
         "mode": {
           "type": "string",
-          "enum": [
-            "path",
-            "id"
-          ],
+          "enum": ["path", "id"],
           "default": "path"
         },
         "before_rev": {
@@ -452,9 +433,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -558,9 +537,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "cursor"
-      ],
+      "required": ["cursor"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -594,9 +571,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "shared_folder_id"
-      ],
+      "required": ["shared_folder_id"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -636,9 +611,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "shared_folder_id"
-      ],
+      "required": ["shared_folder_id"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -672,9 +645,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "cursor"
-      ],
+      "required": ["cursor"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -698,10 +669,7 @@
         },
         "mode": {
           "type": "string",
-          "enum": [
-            "add",
-            "overwrite"
-          ],
+          "enum": ["add", "overwrite"],
           "default": "add"
         },
         "autorename": {
@@ -740,11 +708,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "base64",
-        "confirm"
-      ],
+      "required": ["path", "base64", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -788,10 +752,7 @@
           "const": true
         }
       },
-      "required": [
-        "base64",
-        "confirm"
-      ],
+      "required": ["base64", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -824,10 +785,7 @@
               "maximum": 9007199254740991
             }
           },
-          "required": [
-            "session_id",
-            "offset"
-          ],
+          "required": ["session_id", "offset"],
           "additionalProperties": false
         },
         "close": {
@@ -854,11 +812,7 @@
           "const": true
         }
       },
-      "required": [
-        "cursor",
-        "base64",
-        "confirm"
-      ],
+      "required": ["cursor", "base64", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -895,10 +849,7 @@
               "maximum": 9007199254740991
             }
           },
-          "required": [
-            "session_id",
-            "offset"
-          ],
+          "required": ["session_id", "offset"],
           "additionalProperties": false
         },
         "commit": {
@@ -910,10 +861,7 @@
             },
             "mode": {
               "type": "string",
-              "enum": [
-                "add",
-                "overwrite"
-              ],
+              "enum": ["add", "overwrite"],
               "default": "add"
             },
             "autorename": {
@@ -929,9 +877,7 @@
               "default": true
             }
           },
-          "required": [
-            "path"
-          ],
+          "required": ["path"],
           "additionalProperties": false
         },
         "base64": {
@@ -954,12 +900,7 @@
           "const": true
         }
       },
-      "required": [
-        "cursor",
-        "commit",
-        "base64",
-        "confirm"
-      ],
+      "required": ["cursor", "commit", "base64", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1008,10 +949,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "confirm"
-      ],
+      "required": ["path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1060,11 +998,7 @@
           "const": true
         }
       },
-      "required": [
-        "from_path",
-        "to_path",
-        "confirm"
-      ],
+      "required": ["from_path", "to_path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1114,11 +1048,7 @@
           "const": true
         }
       },
-      "required": [
-        "from_path",
-        "to_path",
-        "confirm"
-      ],
+      "required": ["from_path", "to_path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1161,10 +1091,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "confirm"
-      ],
+      "required": ["path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1206,11 +1133,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "rev",
-        "confirm"
-      ],
+      "required": ["path", "rev", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1239,18 +1162,12 @@
           "properties": {
             "audience": {
               "type": "string",
-              "enum": [
-                "public",
-                "team",
-                "no_one"
-              ],
+              "enum": ["public", "team", "no_one"],
               "default": "no_one"
             },
             "access": {
               "type": "string",
-              "enum": [
-                "viewer"
-              ],
+              "enum": ["viewer"],
               "default": "viewer"
             }
           },
@@ -1272,10 +1189,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "confirm"
-      ],
+      "required": ["path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1304,11 +1218,7 @@
           "properties": {
             "audience": {
               "type": "string",
-              "enum": [
-                "public",
-                "team",
-                "no_one"
-              ]
+              "enum": ["public", "team", "no_one"]
             },
             "expires": {
               "type": "string",
@@ -1336,11 +1246,7 @@
           "const": true
         }
       },
-      "required": [
-        "url",
-        "settings",
-        "confirm"
-      ],
+      "required": ["url", "settings", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1382,10 +1288,7 @@
           "const": true
         }
       },
-      "required": [
-        "url",
-        "confirm"
-      ],
+      "required": ["url", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1427,10 +1330,7 @@
           "const": true
         }
       },
-      "required": [
-        "path",
-        "confirm"
-      ],
+      "required": ["path", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1465,9 +1365,7 @@
           "description": "Explicit namespace_id path root. User tokens only; team support is unqualified."
         }
       },
-      "required": [
-        "async_job_id"
-      ],
+      "required": ["async_job_id"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
@@ -1508,24 +1406,16 @@
                     "maxLength": 254
                   }
                 },
-                "required": [
-                  ".tag",
-                  "email"
-                ],
+                "required": [".tag", "email"],
                 "additionalProperties": false
               },
               "access_level": {
                 "type": "string",
-                "enum": [
-                  "viewer",
-                  "editor"
-                ],
+                "enum": ["viewer", "editor"],
                 "default": "viewer"
               }
             },
-            "required": [
-              "member"
-            ],
+            "required": ["member"],
             "additionalProperties": false
           },
           "minItems": 1,
@@ -1550,11 +1440,7 @@
           "const": true
         }
       },
-      "required": [
-        "shared_folder_id",
-        "members",
-        "confirm"
-      ],
+      "required": ["shared_folder_id", "members", "confirm"],
       "additionalProperties": false,
       "$schema": "http://json-schema.org/draft-07/schema#"
     },
