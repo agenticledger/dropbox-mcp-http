@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "name": "dropbox",
+  "displayName": "Dropbox",
+  "version": "1.0.0",
+  "description": "Personal Dropbox files, transfers, revisions and sharing through direct API v2.",
+  "category": "Productivity",
+  "transport": "http",
+  "url": "https://dropboxmcp.agenticledger.ai/mcp",
+  "repository": "https://github.com/agenticledger/dropbox-mcp-http",
+  "brokerProvider": "dropbox",
+  "brokerKind": "oauth",
+  "brokerClientNamespace": "dropbox-mcp-prod",
+  "brokerAuthMode": "principal",
+  "toolCount": 33,
+  "tools": [
+    {
+      "name": "dropbox_account_get",
+      "write": false
+    },
+    {
+      "name": "dropbox_space_usage",
+      "write": false
+    },
+    {
+      "name": "dropbox_folder_list",
+      "write": false
+    },
+    {
+      "name": "dropbox_folder_continue",
+      "write": false
+    },
+    {
+      "name": "dropbox_metadata_get",
+      "write": false
+    },
+    {
+      "name": "dropbox_search",
+      "write": false
+    },
+    {
+      "name": "dropbox_search_continue",
+      "write": false
+    },
+    {
+      "name": "dropbox_download",
+      "write": false
+    },
+    {
+      "name": "dropbox_export",
+      "write": false
+    },
+    {
+      "name": "dropbox_preview",
+      "write": false
+    },
+    {
+      "name": "dropbox_temporary_link",
+      "write": false
+    },
+    {
+      "name": "dropbox_revisions_list",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_links_list",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_folders_list",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_folders_continue",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_folder_get",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_members_list",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_members_continue",
+      "write": false
+    },
+    {
+      "name": "dropbox_upload",
+      "write": true
+    },
+    {
+      "name": "dropbox_session_start",
+      "write": true
+    },
+    {
+      "name": "dropbox_session_append",
+      "write": true
+    },
+    {
+      "name": "dropbox_session_finish",
+      "write": true
+    },
+    {
+      "name": "dropbox_folder_create",
+      "write": true
+    },
+    {
+      "name": "dropbox_copy",
+      "write": true
+    },
+    {
+      "name": "dropbox_move",
+      "write": true
+    },
+    {
+      "name": "dropbox_delete",
+      "write": true
+    },
+    {
+      "name": "dropbox_restore",
+      "write": true
+    },
+    {
+      "name": "dropbox_shared_link_create",
+      "write": true
+    },
+    {
+      "name": "dropbox_shared_link_modify",
+      "write": true
+    },
+    {
+      "name": "dropbox_shared_link_revoke",
+      "write": true
+    },
+    {
+      "name": "dropbox_shared_folder_share",
+      "write": true
+    },
+    {
+      "name": "dropbox_shared_folder_status",
+      "write": false
+    },
+    {
+      "name": "dropbox_shared_member_add",
+      "write": true
+    }
+  ],
+  "local": {
+    "command": "node",
+    "args": ["dist/hub-server.js"]
+  },
+  "writeEnableEnv": "DROPBOX_ENABLE_WRITES=true",
+  "publishingStatus": "Portable AgentHub mirror/packaging; not a remote AgentHub publication receipt",
+  "qualification": "mocked contracts only; real Dropbox consent, refresh and operations pending"
+}
